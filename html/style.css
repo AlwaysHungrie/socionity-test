@@ -1,0 +1,195 @@
+html{
+  height: 100%;
+}
+
+body{
+  background-color: #faf2f0;
+  font-family: 'IBM Plex Mono', monospace;
+  margin: 0;
+  overflow-y: scroll;
+}
+
+.navigation{
+  top: 0;
+  position: absolute;
+  height: 100vh;
+  width: 20%;
+}
+
+.navigation-logo{
+  position: fixed;
+  background: #ab5232;
+  color: white;
+  height: 3.7rem;
+  width: 3.7rem;
+  margin-top: 1.5rem;
+  margin-left: 1.45rem;
+  border-radius: 4rem;
+  text-align: center;
+  line-height: 3.5rem;
+  font-size: xx-large;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+}
+
+.navigation-link{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.navigation-links{
+  position: fixed;
+  top: 20%;
+  height: 60%;
+  bottom: 20%;
+  display: inline-block ;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 15%;
+}
+
+.navigation-footer{
+  position: fixed;
+  bottom: 15%;
+  height: 10%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 15%;
+}
+
+.navigation-footer p{
+  margin: auto 0;
+  font-size: small;
+  font-weight: 100;
+  line-height: 1.5rem;
+  color: #595959;
+}
+.navigation-footer .navigation-download{
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.landing{
+  background-image: url(https://mycareer.qodeinteractive.com/maria/wp-content/uploads/2019/12/h3-bg-img-1.jpg);
+  background-color: #619489;
+  width: 70%;
+  top: 0;
+  height: 100vh;
+  margin-left: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.center-text{
+  position: absolute;
+  color: #faf2f0;
+  transform: rotate(90deg);
+  line-height: 3.5rem;
+  font-size: 10rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  left: 11rem;
+  top: 20rem;
+} 
+
+.center-text-half{
+  position: absolute;
+  color: #619489;
+  clip-path: polygon(0 60%,100% 60%,100% 100%,0 100%) !important;
+  transform: rotate(90deg);
+  font-size: 10rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  left: 11rem;
+  top: 15rem;
+}
+
+.dual-text{
+  position: absolute;
+  left: -1rem;
+  margin-top: 3rem;
+}
+
+.biography{
+  width: 55%;
+  top: 100%;
+  margin-left: 25%;
+  height: auto;
+}
+
+.biography h3{
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.biography p{
+  width: 85%;
+  line-height: 1.7rem;
+}
+
+.biography .sidepara{
+  position: absolute;
+  top: 56%;
+  width: 20%;
+  line-height: 1em;
+  left: 100%;
+  font-size: 0.85rem;
+}
+
+.biography .sidepara div{
+  margin-top: 1rem;
+}
+
+.experience{
+  width: 55%;
+  margin-left: 25%;
+  
+}
+
+.experience h3{
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 100;
+  color: #619489;
+}
+
+.experience .experience-card .body{
+  width: 85%;
+  background: rgb(241, 231, 227) none repeat scroll 0% 0%;
+}
+.experience .experience-card .body ul{
+  list-style-type: none;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.experience .experience-card .body ul li{
+  margin: 2rem;
+}
+
+.experience .experience-card .head .job-title{
+  display: inline-block;
+  font-weight: 600;
+}
+
+.experience .experience-card .head .job-company{
+  display: inline-block;
+  color: #ab5232;
+  font-size: 0.8rem;
+}
+
+.experience .experience-card .head .job-details-visible{
+  display: inline-block;
+  left: 70%;
+  position: absolute;
+}

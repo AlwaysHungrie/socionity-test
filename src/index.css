@@ -1,0 +1,10 @@
+html{
+  height: 100vh;
+}
+
+body{
+  background-color: #faf2f0;
+  font-family: 'IBM Plex Mono', monospace;
+  margin: 0;
+  overflow-y: scroll;
+}
