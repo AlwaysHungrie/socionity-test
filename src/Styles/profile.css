@@ -1,3 +1,17 @@
+.box {
+  display: flex;
+  height: 100vh;
+}
+
+.nav-dis{
+  display: none;
+}
+
+
+.box > * {
+  flex: 1 1 20em;
+}
+
 .navigation{
   top: 0;
   position: absolute;
@@ -68,11 +82,12 @@
 .landing{
   background-image: url(https://mycareer.qodeinteractive.com/maria/wp-content/uploads/2019/12/h3-bg-img-1.jpg);
   background-color: #619489;
-  width: 70%;
+  /* width: 70%;
   top: 0;
   height: 100vh;
-  margin-left: 30%;
-  background-position: center;
+  margin-left: 30%; */
+  flex: 1 1 80vw;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -102,9 +117,10 @@
 }
 
 .dual-text{
-  position: absolute;
+  /* position: absolute;
   left: -1rem;
-  margin-top: 3rem;
+  margin-top: 3rem; */
+  flex: 1 1 20vw;
 }
 
 .biography{
@@ -182,4 +198,9 @@
   display: inline-block;
   left: 70%;
   position: absolute;
+}
+
+
+.nav-dis{
+  display: none;
 }

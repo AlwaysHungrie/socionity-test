@@ -22,7 +22,9 @@ class App extends Component{
 
   render(){
     const {logged_in, first_name, profile_pic_url} = this.state;
-   
+    // const logged_in=true;
+    // const first_name="dhairya";
+    // const profile_pic_url = '';
     return(
       <Router>
         <Switch>

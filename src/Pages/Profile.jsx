@@ -13,32 +13,51 @@ import '../Styles/profile.css';
 // export default withRouter(Profile);
 
 class Profile extends Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      nav_dis : true
+    }
+  }
   render(){
+    const {nav_dis} = this.state;
     const {first_name, profile_pic_url} = this.props;
     const url = `url(${profile_pic_url})`;
     return(
       <>
-      <div className="navigation">
-      <div className="navigation-logo" style={{background:url}}>{first_name[0]}</div>
-      <div className="navigation-links">
-        <div className="navigation-link" style={{marginTop: "6rem"}}>Biography</div>
-        <div className="navigation-link">Experience</div>
-        <div className="navigation-link">Skills</div>
-        <div className="navigation-link">Get in Touch</div>
+      
+
+    <div class="box">
+      <div className="dual-text">
+        one
+      {/* <div className="center-text-half">{first_name}</div>
+        <div className="center-text">{first_name}</div> */}
+
+        <div className="navigation">
+        <div className="navigation-logo" onClick={() => this.setState({nav_dis: !nav_dis})} style={{background:url}}>{first_name[0]}</div>
+          <div className={nav_dis ? "navigation-links nav-dis" : "navigation-links"}>
+            <div className="navigation-link" style={{marginTop: "6rem"}}>Biography</div>
+            <div className="navigation-link">Experience</div>
+            <div className="navigation-link">Skills</div>
+            <div className="navigation-link">Get in Touch</div>
+          </div>
+
+          <div className={nav_dis ? "navigation-footer nav-dis" : "navigation-footer"}>
+            <p>Feel free to send me a message if you want to enhance your recruitment department.</p>
+            <div className="navigation-download">Download Resume</div>
+          </div>
+        </div>
+        
+      </div>
+        <div className="landing">Two</div>
       </div>
 
-      <div className="navigation-footer">
-        <p>Feel free to send me a message if you want to enhance your recruitment department.</p>
-        <div className="navigation-download">Download Resume</div>
-      </div>
-    </div>
-
-    <div className="landing">
+    {/* <div className="landing">
       <div className="dual-text">
         <div className="center-text">{first_name}</div>
         <div className="center-text-half">{first_name}</div>
       </div>
-    </div>
+    </div> */}
 
     <div className="biography">
       <h3>
